@@ -1,0 +1,5 @@
+transformers==4.44.0
+torch
+requests
+pandas
+datasets
