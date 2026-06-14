@@ -3,3 +3,7 @@ torch
 requests
 pandas
 datasets
+python-dotenv
+boto3
+fastapi
+uvicorn
