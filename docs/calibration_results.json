@@ -1,0 +1,2684 @@
+{
+  "run_timestamp": "2026-06-26T19:22:27Z",
+  "total_pairs_evaluated": 57,
+  "judge_failures": 0,
+  "judge_failure_doc_ids": [],
+  "organic_pairs_evaluated": 50,
+  "synthetic_pairs_evaluated": 7,
+  "category_summary": {
+    "factual_consistency": {
+      "total_pairs": 57,
+      "agreement_count": 45,
+      "agreement_rate": 0.789,
+      "false_positive_count": 3,
+      "false_positive_rate": 0.053,
+      "false_negative_count": 8,
+      "false_negative_rate": 0.14,
+      "passes_threshold": true
+    },
+    "completeness": {
+      "total_pairs": 57,
+      "agreement_count": 44,
+      "agreement_rate": 0.772,
+      "false_positive_count": 0,
+      "false_positive_rate": 0.0,
+      "false_negative_count": 4,
+      "false_negative_rate": 0.07,
+      "passes_threshold": true
+    },
+    "coherence": {
+      "total_pairs": 57,
+      "agreement_count": 51,
+      "agreement_rate": 0.895,
+      "false_positive_count": 1,
+      "false_positive_rate": 0.018,
+      "false_negative_count": 0,
+      "false_negative_rate": 0.0,
+      "passes_threshold": true
+    },
+    "hallucination": {
+      "total_pairs": 57,
+      "agreement_count": 52,
+      "agreement_rate": 0.912,
+      "false_positive_count": 1,
+      "false_positive_rate": 0.018,
+      "false_negative_count": 4,
+      "false_negative_rate": 0.07,
+      "passes_threshold": true
+    },
+    "instruction_following": {
+      "total_pairs": 57,
+      "agreement_count": 55,
+      "agreement_rate": 0.965,
+      "false_positive_count": 0,
+      "false_positive_rate": 0.0,
+      "false_negative_count": 2,
+      "false_negative_rate": 0.035,
+      "passes_threshold": true
+    }
+  },
+  "pair_results": [
+    {
+      "doc_id": "0c3f8f93821c",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 1.0,
+          "agree": false,
+          "false_positive": true,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately and directly stated in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fails to capture the primary substance of the source, such as the introduction of key speakers, important financial disclaimers, and the announcement of the virtual investor day."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and the sentences are logically structured, presenting a clear set of facts."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references, figures, and facts in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary conforms to the implicit format constraint of being a textual summary without any specified violations."
+        }
+      }
+    },
+    {
+      "doc_id": "7edafba77119",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are directly supported by the source document without any inaccuracies."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures overall financial results and one geographic highlight but omits significant details regarding segment performance and other end-market and geographic highlights."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the information in a clear, logical sequence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All information presented in the summary is explicitly stated in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary conforms to the implicit instruction of providing a concise summary without any specified format constraints."
+        }
+      }
+    },
+    {
+      "doc_id": "738c4775dced",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including specific revenue figures and growth percentages for the Diagnostics and Genomics Group and NASD oligo manufacturing, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures specific segment performance for DGG and a key geographic highlight (China's recovery) but omits the overall full-year fiscal 2020 results for Agilent, including total revenue, EPS, operating margin, and performance of other segments and end markets."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting related financial information and a key recovery driver in a clear sequence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly stated and clearly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The model provided a summary as expected, and there were no specific format constraints for the summary itself mentioned in the prompt for evaluation."
+        }
+      }
+    },
+    {
+      "doc_id": "9611409930a9",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately reflected and grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary strategic conclusions regarding growth and capital deployment but omits key supporting evidence and specific examples like the BioTek acquisition and Frederick site investments."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting Agilent's strategy and a related action in a clear sequence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "2b4682f8bd8e",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All financial figures and growth percentages stated in the summary are accurately reflected from the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures key overall revenue figures and growth drivers but omits several other significant segment-level performances and the broader context of exceeding expectations despite COVID-19."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the financial results in a clear and logical manner."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary provides a concise overview of financial results, adhering to the implicit goal of summarization without any specified format constraints for the summary itself."
+        }
+      }
+    },
+    {
+      "doc_id": "6e8d23d2f110",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including details about muted lines, the Q&A session, and the website for materials, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fails to capture the primary substance of the source document, which includes Agilent's Q3 revenues of $1.26 billion and the reported 1% decrease, focusing instead only on logistical details."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information clearly without contradictions or awkward phrasing."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a plain text summary and does not violate any format or constraint instructions provided for its generation."
+        }
+      }
+    },
+    {
+      "doc_id": "066573830d55",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and customer satisfaction, are accurately reflected and grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures primary revenue figures and customer satisfaction but omits other significant financial results like EPS and operating margin, as well as crucial details about regional performance, market challenges, and strategic priorities."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the information in a clear, logically structured manner without any awkward phrasing."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All figures, entities, and facts presented in the summary are explicitly stated in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary conforms to the implicit format constraint of being a concise summary without any specific formatting violations."
+        }
+      }
+    },
+    {
+      "doc_id": "454188c42c03",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately reflected and grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results and geographic performance but omits the 10% revenue decline for the Americas, the 1% growth for the CrossLab Group, and the significant growth of the Nucleic Acid Solution business within DGG."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information clearly from overall company performance to specific groups."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is provided as requested, and the task is to evaluate it, not to generate it according to specific constraints beyond the evaluation criteria."
+        }
+      }
+    },
+    {
+      "doc_id": "d49797523cad",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately and directly stated in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary omits significant material substance, including the company's COVID-19 impact, Q4 outlook, regional performance, and strategic priorities, which are primary conclusions of the source."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting two distinct but clear points."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary itself did not have any specific format or constraint instructions to follow, so it cannot violate them."
+        }
+      }
+    },
+    {
+      "doc_id": "ebeae95caf36",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and end-market performance details, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary overall revenue figures and one end-market performance but omits details on several other end-markets and the mention of a Q4 framework."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting overall revenue figures before detailing a specific end-market's performance."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references to entities, figures, and facts in the summary are explicitly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "48bdf213e37d",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims made in the summary are accurately reflected in the source document, despite a repetitive phrasing of a name."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fails to capture material substance such as the introduction of the new Agilent CrossLab Group President and the important financial context and disclaimers provided by Investor Relations."
+        },
+        "coherence": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is structurally awkward due to the repeated mention of 'Bob McMahon and Bob McMahon' in a single sentence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified JSON format, scoring, and justification length requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "fa20354aa319",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately and directly stated in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary focus areas regarding COVID-19 but omits the third key focus area on preserving P&L and balance sheet, as well as the personnel change mentioned at the beginning."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting Agilent's response and priorities clearly."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document with no additional information introduced."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The model summary itself is a coherent text, and the evaluation will be presented in the requested JSON format."
+        }
+      }
+    },
+    {
+      "doc_id": "d8fa6284f789",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and strategic actions, are accurately reflected from the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary revenue figures and some strategic points but omits other key financial results like operating margin and EPS, as well as the significant strategic decision to shutter the sequencer development program."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, with sentences flowing smoothly."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts presented in the summary are explicitly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the requested JSON format, scoring system, and justification length."
+        }
+      }
+    },
+    {
+      "doc_id": "988f8a071771",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims made in the summary, including specific figures and statements about growth and outlook, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results and strategic conclusions, such as DGG's growth and the outlook for China and Europe/US, but omits many other significant financial results, segment performances, end market details, and forward guidance from the source."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured as a series of distinct, factual statements, with no contradictions or awkward phrasing."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts presented in the summary are explicitly stated and clearly grounded in the provided source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified format, providing a score and a one-sentence justification for each dimension within the required JSON structure."
+        }
+      }
+    },
+    {
+      "doc_id": "10b3017db92b",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately reflected and directly quoted from the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary conclusions like the company's focus and lack of forward guidance, but omits significant details regarding Agilent's role and impact in the COVID-19 fight and the financial details Bob McMahon intends to discuss."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting three distinct but related statements about Agilent."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document, with no new entities, figures, or facts introduced."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary adheres to the specified format and constraints, providing a score and a one-sentence justification for each dimension."
+        }
+      }
+    },
+    {
+      "doc_id": "033d3a4eeb04",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately and directly stated in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some logistical and disclaimer information but omits significant contextual details such as the introduction of key executives, the news of Mark Doak's retirement, and the explanation of financial reporting standards."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and the sentences flow logically, presenting related introductory information."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a single block of text and does not violate any explicit formatting or length constraints."
+        }
+      }
+    },
+    {
+      "doc_id": "9b040212fb3d",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims regarding Q1 revenues and their growth percentages are accurately reflected from the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary revenue figures but omits other key financial results like EPS, significant strategic highlights such as the BioTek acquisition and the impact of the Coronavirus, and the important personnel change mentioned."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting the Q1 financial results in a clear sequence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts presented in the summary are explicitly stated in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring system, and justification length requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "fd1412106de1",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary accurately reflects most facts, but omits the qualifier 'albeit at a reduced rate' when describing production activities and shipping, making that claim imprecisely stated."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures Agilent's strong Q1 performance and operational response to the Coronavirus but omits key financial details like the $10 million Q1 revenue impact, Q2 projections, and the crucial unchanged full-year outlook."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and the sentences flow logically, presenting a clear narrative of Agilent's performance and response."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All information presented in the summary is directly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the requested JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "2d81a70a14b7",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims made in the summary are accurately reflected and grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results like overall broad-based growth, China's performance, and LSAG reported revenue, but omits significant segment-level details for ACG and DGG, LSAG's core growth, and other regional performance."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and the sentences flow logically without any structural awkwardness."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified JSON format, scoring, and justification requirements without any additional text."
+        }
+      }
+    },
+    {
+      "doc_id": "f15d370dd0e1",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are directly and accurately stated in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary points like new product recognition, sustainability award, and confidence in the China team, but omits other significant details such as specific new products, industry awards, the shareholder value creation model, and the maintained full-year outlook."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents information in a clear, well-structured manner."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is provided as plain text, which is a standard and acceptable format for a summary."
+        }
+      }
+    },
+    {
+      "doc_id": "5e8e5d96a44d",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary incorrectly states the website URL for supplementary materials as `www.agilent.com` instead of the correct `www.investor.agilent.com` from the source."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary only captures logistical details and completely omits the primary financial results and business performance information presented in the source document."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting related logistical information clearly."
+        },
+        "hallucination": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary hallucinates the website URL `www.agilent.com` for supplementary materials, as this specific URL is not present in the source for that purpose."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring system, and justification length requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "000049c3abd4",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All financial figures and statements in the summary are accurately reflected and directly grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary only covers the full fiscal year 2021 results and completely omits all Q4 2021 results, market performance, geographic performance, and business unit performance, which constitute a significant portion of the source's primary substance."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured as a concise paragraph presenting key full-year financial highlights."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is presented as a standard plain text paragraph, and no specific formatting constraints were provided for the summary content itself."
+        }
+      }
+    },
+    {
+      "doc_id": "192d187e3030",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The phrase 'on both a reported and a core basis' is imprecisely stated and misattributed to ACG's revenue rather than LSAG's growth or ACG's growth percentages."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fails to capture the primary financial results and strategic conclusions for the Diagnostics and Genomics Group and significant company-wide developments like sustainability commitments."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The phrase 'on both a reported and a core basis' is awkwardly placed and grammatically detached, making the summary structurally awkward."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary itself does not violate any explicit format or length constraints specified in the prompt for the summary content."
+        }
+      }
+    },
+    {
+      "doc_id": "ea87406dccb5",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 1.0,
+          "agree": false,
+          "false_positive": true,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including details about the new organization and fiscal 2022 guidance, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary financial guidance and a key organizational change but omits other significant details such as company awards, the leader of the new organization, the Chemistries and Supplies Division move, and long-term growth outlooks."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting distinct facts in a clear and readable manner."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a concise text output, and no specific format constraints for the summary itself were violated."
+        }
+      }
+    },
+    {
+      "doc_id": "ba956a63aa52",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately grounded in the source document without any contradictions or misstatements."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fails to capture the primary financial results and detailed performance for Q4 2021, focusing only on future guidance and a partial growth strategy."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting two related pieces of information clearly."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly and explicitly stated in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary itself does not violate any implicit format constraints for a summary, and the overall output will conform to the requested JSON schema."
+        }
+      }
+    },
+    {
+      "doc_id": "e9249958f3f0",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 1.0,
+          "agree": false,
+          "false_positive": true,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary only captures logistical details and fails to capture the primary purpose of the chunk, which introduces the key speakers and context for the financial discussion."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and well-structured."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the implicit format constraints of a summary."
+        }
+      }
+    },
+    {
+      "doc_id": "5d3e7c059c85",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including financial figures and growth percentages, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures key financial results like revenue and operating margin, but omits other primary financial results such as EPS and significant details regarding overall market performance and other segment growth."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the information in a clear, logical flow without any contradictions or structural awkwardness."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts presented in the summary are explicitly stated and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON schema, including the correct score types and one-sentence justifications for each dimension."
+        }
+      }
+    },
+    {
+      "doc_id": "229c9079530f",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately stated and directly grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary fails to capture the primary substance of the source by omitting two out of three major business unit performances (ACG and DGG) and other key financial highlights."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information about LSAG clearly."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly and explicitly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a plain text paragraph, and no specific format constraints were provided for the summary itself."
+        }
+      }
+    },
+    {
+      "doc_id": "b77df01ea8c5",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately reflected and grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary conclusions like exceeding revenue milestones and broad-based growth but omits significant supporting details and other key information such as specific growth percentages, segment performance, geographic highlights, and other company achievements."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured with clear, flowing sentences."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a standard paragraph and does not violate any explicit format or constraint instructions provided in the prompt for the summary itself."
+        }
+      }
+    },
+    {
+      "doc_id": "05d51c52d1ce",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are directly and accurately stated in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the forward-looking guidance and strategic outlook but completely omits the detailed Q3 financial results, market performance, and segment growth, which constitute a significant portion of the primary substance in the source."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and the sentences flow logically."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All information presented in the summary is explicitly stated in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a concise paragraph that directly addresses the content of the source."
+        }
+      }
+    },
+    {
+      "doc_id": "f7c2fa53472e",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary imprecisely states 'fiscal year 2021 results' instead of specifically 'second quarter fiscal year 2021 results,' making the claim directionally correct but not fully accurate."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures only logistical details and speaker introductions, failing to include the substantive financial context, disclaimers, and the CEO's initial remarks about the Agilent India team."
+        },
+        "coherence": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is structurally awkward due to the repeated mention of 'Bob McMahon' in the opening sentence."
+        },
+        "hallucination": {
+          "human": 0.5,
+          "gemini": 1.0,
+          "agree": false,
+          "false_positive": true,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements without any additional text."
+        }
+      }
+    },
+    {
+      "doc_id": "6864b7288f47",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and COVID-19 related revenue percentages, are accurately stated and directly supported by the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures primary revenue figures and market context but omits other key financial results like EPS and operating margins, as well as important details about broad-based growth, acquisitions, and specific market performance."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting the information in a clear and easy-to-understand manner."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All figures and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a concise text that directly addresses the content of the source document without any apparent violations of general summarization principles."
+        }
+      }
+    },
+    {
+      "doc_id": "dd2ff4e83db8",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and growth percentages, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results like LSAG revenue and top geographic growth but omits significant details such as other group performance (ACG), specific end-market growth rates, and new product information."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting facts clearly without awkward phrasing or contradictions."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring system, and justification length requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "266d7406fe6e",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary are accurately and directly stated in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures a few specific details about growth drivers and an acquisition but omits primary financial results, key growth percentages, and other significant strategic information from both groups and the overall company outlook."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents three distinct facts without contradiction or structural awkwardness."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "71b6bc3daa3e",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and growth percentages, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures key Q2 financial results but omits significant information regarding the company's decision to raise full-year guidance, broader market performance, and strategic initiatives mentioned in the source."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary presents a clear and internally consistent list of financial facts without any structural awkwardness or contradictions."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary itself is a plain text summary, and the final output will conform to the specified JSON schema."
+        }
+      }
+    },
+    {
+      "doc_id": "7feee879ccb5",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All statements in the summary are directly and accurately taken verbatim from the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fails to capture the primary substance of the chunk, specifically the announced financial results and performance statements, focusing only on logistical details and a disclaimer."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a collection of verbatim sentences from different parts of the source that do not flow together to form a cohesive or well-structured narrative."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are explicitly stated and clearly grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary fails to follow the implicit instruction to produce a condensed and informative summary, instead merely extracting three sentences verbatim without synthesis."
+        }
+      }
+    },
+    {
+      "doc_id": "704502f9c318",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All facts presented in the summary are accurately stated and directly supported by the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures overall revenue and some high-level growth figures but omits other primary financial results like EPS and operating margins, as well as specific segment performance details."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents information in a clear, well-structured manner."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All information presented in the summary is explicitly stated in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The output failed to return a JSON object as explicitly required by the instructions, instead providing plain text."
+        }
+      }
+    },
+    {
+      "doc_id": "a5b127d8cd23",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including specific figures and growth percentages, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results and strategic conclusions but omits key financial details for ACG and specific plans for COVID-19 efforts, as well as other end market performance and the sustainability award."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents information in a clear, albeit somewhat abrupt, sentence-by-sentence structure without contradictions."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the implicit instruction of providing a summary without any specified format constraints being violated."
+        }
+      }
+    },
+    {
+      "doc_id": "2e71ffa8913d",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including the core growth guidance, the intention not to slow down, the M&A strategy, and Bob McMahon's upcoming topics, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary core growth guidance and some strategic elements, but omits other key financial guidance such as raised earnings guidance and guiding towards the top end of margin expansion, as well as some details of Bob's remarks and the overall positive performance context."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary presents a collection of facts without strong transitions or a narrative flow, making it structurally awkward but not self-contradictory or misleading."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts mentioned in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON schema, scoring format, and justification requirements without any additional text."
+        }
+      }
+    },
+    {
+      "doc_id": "f3400da1f497",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims regarding revenue figures and market growth rates are accurately reflected from the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures overall revenue figures and the performance of two key markets (Pharma and Food) but omits details and performance for three other significant end markets discussed in the source (Environmental and forensics, Diagnostics and clinical, Chemical and energy)."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and well-structured, presenting information in a clear and logical sequence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "21de43df5919",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary accurately identifies the participants and the event, but imprecisely states that Jacob Thaysen, Sam Raha, and Padraig McDonnell will 'discuss the company's Q&A results' instead of 'joining in the Q&A'."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary participants and the call's topic but omits important details such as where to find supplemental materials, definitions of financial metrics, and various disclaimers about forward-looking statements and segment reporting changes."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information about the call, its main speakers, and Q&A participants in a clear sequence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary hallucinates the phrase 'Q&A results,' which is not present in the source document and misrepresents the role of the individuals joining the Q&A."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the implicit format constraints, providing a concise summary without any specified violations."
+        }
+      }
+    },
+    {
+      "doc_id": "3b77623c108e",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All figures and statements in the summary, including full-year revenue, core revenue growth, operating margin, and geographic performance, are accurately reflected from the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures key full-year financial results and a strategic conclusion but omits all fourth-quarter results, full-year EPS, and specific details about business group and end market performance."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting a clear sequence of facts without contradictions or awkward phrasing."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All information presented in the summary is directly grounded in the source document, with no external or unstated references."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary itself does not violate any explicit format or constraint instructions provided for the summary generation task."
+        }
+      }
+    },
+    {
+      "doc_id": "323a78d92d11",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including specific revenue figures and growth percentages, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results and strategic conclusions, such as ACG's revenue and China's growth, but omits significant details regarding overall market performance, other regional growth, and specific figures for the Life Science and Applied Markets Group."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents information in a clear, logically structured manner without contradictions."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary conforms to the implicit format of a concise summary and does not violate any specified constraints."
+        }
+      }
+    },
+    {
+      "doc_id": "659699e4e570",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims made in the summary are accurately and directly stated in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results and one key recognition but omits significant segment-level breakdowns, other important business highlights, and the strategic recap and forward guidance."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary presents a series of facts that are internally consistent and logically structured as a list, without any contradictions or misleading awkwardness."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements without any additional text."
+        }
+      }
+    },
+    {
+      "doc_id": "a414fd99a262",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including specific figures and growth rates, are accurately reflected and grounded in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures key Q4 financial results and growth drivers but omits other significant details such as overall performance exceeding expectations, M&A contribution, pharma market performance, and the status of orders and backlog."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the information in a clear, logically structured manner."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the requested JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "24faa9528143",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims made in the summary, including the webcast status and the participants, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary participants and a key logistical detail but omits significant contextual information, disclaimers, and definitions that are material to an earnings call introduction."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is structurally awkward due to the redundant mention of 'Mike' ('Mike McMullen, Mike') in the second sentence."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities and facts mentioned in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "90cc55c7ee98",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary incorrectly states that the 13% core revenue growth occurred in Q3 of 2021, whereas the source indicates it was the current quarter's growth on top of Q3 2021's growth."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results like revenue and operating margin but omits other key financial results such as EPS and forward guidance, as well as significant market and geographic performance details."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and well-structured, presenting financial figures and a market highlight clearly."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All references in the summary are clearly grounded in the source document, even if one is factually misrepresented."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification length requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "0f6f67947792",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures, growth percentages, and market descriptions, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures primary financial results for the Life Science and Applied Group and European business but omits the performance of the Agilent CrossLab Group, new product introductions, and the acquisition of PSS, which are material substance."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents information in a clear, well-structured manner without contradictions."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified format and constraints, providing a score and a one-sentence justification for each dimension."
+        }
+      }
+    },
+    {
+      "doc_id": "0fa10e8755fe",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures and performance descriptions, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures primary financial results for two groups but omits the core growth for the Diagnostic and Genomics Group, all details regarding the Nucleic Acid Solutions Division and oligo manufacturing, and the ESG report mention."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information about each group clearly and sequentially."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present and grounded in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is a single paragraph and does not violate any explicit formatting or constraint instructions provided in the prompt."
+        }
+      }
+    },
+    {
+      "doc_id": "f54088bda1de",
+      "is_synthetic": false,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including specific figures for Q3 revenues, FX impact, and deferred revenue due to China lockdowns, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures key financial figures but omits other material substance such as the overall business strength, customer satisfaction, market outperformance, the raising of full-year guidance, and broad-based growth across markets and regions."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the information in a clear, logical sequence without any structural awkwardness."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts referenced in the summary are explicitly present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary conforms to the implicit instruction of providing a concise summary without any specific formatting constraints being violated."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_01",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary includes a claim about a $200 million share buyback program that is not present in the source document, making it factually inconsistent."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary financial results but omits significant supporting details such as segment performance, geographic highlights, and end-market growth."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and well-structured, presenting financial figures clearly."
+        },
+        "hallucination": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary hallucinates a new $200 million share buyback program that is not mentioned in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_02",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary misattributes a statement about future growth to 'CFO Sarah Chen,' who is not mentioned in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary fails to capture the primary financial results for the full year, including overall revenue, EPS, operating margin, and the performance of other key segments like LSAG."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information clearly."
+        },
+        "hallucination": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary hallucinates the name and title 'CFO Sarah Chen,' who is not mentioned anywhere in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary fully conforms to the specified JSON format, scoring system, and justification length requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_03",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary incorrectly states Agilent's Q3 EPS as $0.91 per share, while the source document clearly states it as $0.78 per share."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures the primary financial results (revenue, EPS, operating margin) but omits significant details such as regional performance (e.g., China's 11% growth) and the broader context of lab access and customer capital expenditure decisions."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and presents the financial figures in a clear, well-structured manner."
+        },
+        "hallucination": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary includes an EPS figure of $0.91 per share, which is not present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The response will conform to the specified JSON output format and scoring scale."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_04",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary incorrectly states that Agilent announced FDA clearance for an 'Agilent BioScan 3000 genomic sequencing platform,' which is not mentioned in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary omits significant material substance, including the company's COVID-19 efforts and their impact on growth, as well as the entire Q4 outlook and strategic priorities."
+        },
+        "coherence": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting information clearly without contradictions."
+        },
+        "hallucination": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary hallucinates the existence and FDA clearance of an 'Agilent BioScan 3000 genomic sequencing platform,' which is not present in the source."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON schema, providing a score and a one-sentence justification for each dimension."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_05",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary directly contradicts the source by stating the food market declined across all regions, whereas the source indicates broad-based growth led by China."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures overall revenue and core growth figures, but omits significant details about other key market performances and the overall positive sentiment of exceeding expectations."
+        },
+        "coherence": {
+          "human": 0.0,
+          "gemini": 0.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is self-contradictory, stating that the food market experienced double-digit growth and then immediately claiming it declined across all regions."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The statement that the food market declined across all regions with no meaningful recovery is a hallucination, as it directly contradicts the information provided in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_06",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 0.5,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The summary incorrectly states that Europe and the Americas led growth across all major markets, which contradicts the source indicating these regions lagged China and experienced revenue declines."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results but omits key details such as the performance of the Life Sciences and Applied Markets Group, CrossLab Group, and the strong growth of the nucleic acid solution business within DGG."
+        },
+        "coherence": {
+          "human": 0.0,
+          "gemini": 1.0,
+          "agree": false,
+          "false_positive": true,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent and logically structured, presenting regional declines followed by a general statement and then a specific group's performance."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 0.0,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": true,
+          "gemini_justification": "The claim that Europe and the Americas led growth across all major markets is not present in the source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring, and one-sentence justification requirements."
+        }
+      }
+    },
+    {
+      "doc_id": "synth_07",
+      "is_synthetic": true,
+      "scores": {
+        "factual_consistency": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All claims in the summary, including revenue figures, customer satisfaction, lab access, and China's performance, are accurately reflected in the source document."
+        },
+        "completeness": {
+          "human": 0.5,
+          "gemini": 0.5,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary captures some primary financial results and strategic conclusions, such as reported revenue change and China's performance, but omits other key financial details like total revenue, EPS, operating margin, and broader regional performance."
+        },
+        "coherence": {
+          "human": 0.0,
+          "gemini": 0.5,
+          "agree": false,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The summary is internally consistent but structurally awkward due to the repetition of 'Customer satisfaction rankings are at all-time highs' and the redundant phrasing 'limited lab access remaining limited'."
+        },
+        "hallucination": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "All entities, figures, and facts presented in the summary are explicitly stated and grounded in the provided source document."
+        },
+        "instruction_following": {
+          "human": 1.0,
+          "gemini": 1.0,
+          "agree": true,
+          "false_positive": false,
+          "false_negative": false,
+          "gemini_justification": "The output fully conforms to the specified JSON format, scoring scale, and justification length requirements without any additional text."
+        }
+      }
+    }
+  ]
+}
