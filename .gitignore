@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .env
 data/summaries_raw.csv
+lambda_package/
