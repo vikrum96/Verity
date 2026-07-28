@@ -21,10 +21,10 @@ Under active development. Serving infrastructure complete and deployed. Evaluati
 | DynamoDB pipeline outputs + evaluation results tables | Complete |
 | S3 document storage | Complete |
 | CI/CD via GitHub Actions | Complete |
-| Gemini judge + schema validation | In progress |
-| Judge calibration against validation set | In progress |
-| Lambda evaluation runner + EventBridge | In progress |
-| Behavioral profiling + regression detection | In progress |
+| Gemini judge + schema validation | Complete |
+| Judge calibration against validation set | Complete |
+| Lambda evaluation runner + EventBridge | Complete |
+| Behavioral profiling + regression detection | Complete |
 | CloudWatch dashboard + SNS alerts | In progress |
 
 ## Stack
