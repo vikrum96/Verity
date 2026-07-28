@@ -37,4 +37,4 @@ S&P 500 earnings call transcripts (`kurry/sp500_earnings_transcripts` via Huggin
 
 ---
 
-*Full README with architecture diagram, calibration results, and CloudWatch dashboard coming end of June 2026.*
+*Full README with architecture diagram, calibration results, and CloudWatch dashboard coming soon.*
