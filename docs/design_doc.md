@@ -147,7 +147,7 @@ This is a portfolio project. Running the evaluator on a true nightly schedule wo
 | `Score_Coherence` | Evaluation | Per-run average score; feeds behavioral profiling and dashboard |
 | `Score_Hallucination` | Evaluation | Per-run average score; feeds behavioral profiling and dashboard |
 | `Score_InstructionFollowing` | Evaluation | Per-run average score; feeds behavioral profiling and dashboard |
-| `Regression_[Category]` | Behavioral | Binary flag set when a category score drops more than 5% from the previous run |
+| `Regression_[Category]` | Behavioral | Binary flag set when a category score drops more than its configured threshold from the previous run (hallucination/factual_consistency: 0.03, completeness: 0.05, coherence/instruction_following: 0.08; overridable via env vars) |
 
 **Why track regression flags as separate metrics rather than recomputing from score history:**
 Storing regression flags explicitly makes the SNS alerting logic simple — a CloudWatch alarm watches for consecutive 1s on a high-severity regression metric and fires. Recomputing from score history every time would require a Lambda function just to evaluate the alert condition, adding unnecessary complexity.

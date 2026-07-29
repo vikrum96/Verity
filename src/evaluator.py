@@ -40,8 +40,25 @@ CATEGORIES = [
 # Categories where consecutive regressions trigger immediate SNS alert
 HIGH_SEVERITY_CATEGORIES = {"hallucination", "factual_consistency"}
 
-# Score drop threshold that constitutes a regression
-REGRESSION_THRESHOLD = 0.05
+# Per-category score-drop thresholds that constitute a regression
+HALLUCINATION_THRESHOLD = float(os.environ.get("HALLUCINATION_THRESHOLD", "0.03"))
+FACTUAL_CONSISTENCY_THRESHOLD = float(os.environ.get("FACTUAL_CONSISTENCY_THRESHOLD", "0.03"))
+COMPLETENESS_THRESHOLD = float(os.environ.get("COMPLETENESS_THRESHOLD", "0.05"))
+COHERENCE_THRESHOLD = float(os.environ.get("COHERENCE_THRESHOLD", "0.08"))
+INSTRUCTION_FOLLOWING_THRESHOLD = float(os.environ.get("INSTRUCTION_FOLLOWING_THRESHOLD", "0.08"))
+
+REGRESSION_THRESHOLDS = {
+    "hallucination": HALLUCINATION_THRESHOLD,
+    "factual_consistency": FACTUAL_CONSISTENCY_THRESHOLD,
+    "completeness": COMPLETENESS_THRESHOLD,
+    "coherence": COHERENCE_THRESHOLD,
+    "instruction_following": INSTRUCTION_FOLLOWING_THRESHOLD,
+}
+
+
+def is_regression(category: str, delta: float) -> bool:
+    """Return True if delta exceeds the per-category regression threshold."""
+    return delta < -REGRESSION_THRESHOLDS[category]
 
 
 def get_dynamodb():
@@ -133,13 +150,7 @@ def compute_deltas(current_scores: dict, previous_scores: dict) -> dict:
     }
 
 
-def push_cloudwatch_metrics(
-    eval_run_tag: str,
-    avg_scores: dict,
-    regression_flags: dict,
-    judge_failure_count: int,
-    total_pairs: int,
-):
+def push_cloudwatch_metrics(eval_run_tag: str, avg_scores: dict, regression_flags: dict, judge_failure_count: int, total_pairs: int):
     """Push all 13 metrics to CloudWatch."""
     cloudwatch = get_cloudwatch()
     timestamp = datetime.now(timezone.utc)
@@ -185,7 +196,7 @@ def push_cloudwatch_metrics(
         )
 
 
-def send_sns_alert(category: str, delta: float, eval_run_tag: str):
+def send_sns_alert(category: str, delta: float, threshold: float, eval_run_tag: str):
     """Send SNS alert for a high-severity consecutive regression."""
     if not SNS_TOPIC_ARN:
         print(f"SNS_TOPIC_ARN not set — skipping alert for {category}")
@@ -196,6 +207,7 @@ def send_sns_alert(category: str, delta: float, eval_run_tag: str):
         f"Verity regression alert\n\n"
         f"Category: {category}\n"
         f"Score drop: {abs(delta):.3f}\n"
+        f"Threshold: {threshold:.3f}\n"
         f"Eval run: {eval_run_tag}\n"
         f"Severity: {'HIGH' if category in HIGH_SEVERITY_CATEGORIES else 'MEDIUM'}\n"
     )
@@ -223,6 +235,7 @@ def handler(event, context):
 
     eval_run_tag = f"eval_{run_id}_{int(time.time())}"
     print(f"Starting evaluation run: {eval_run_tag}")
+    print(f"Regression thresholds: {REGRESSION_THRESHOLDS}")
 
     # Fetch pipeline outputs for this run
     outputs = fetch_pipeline_outputs(run_id)
@@ -278,13 +291,14 @@ def handler(event, context):
         print(f"Score deltas: {deltas}")
 
         for category, delta in deltas.items():
-            regression = delta < -REGRESSION_THRESHOLD
+            threshold = REGRESSION_THRESHOLDS[category]
+            regression = is_regression(category, delta)
             regression_flags[category] = regression
 
             if regression:
-                print(f"Regression detected in {category}: {delta:.3f}")
+                print(f"Regression detected in {category}: {delta:.3f} (threshold: -{threshold:.3f})")
                 if category in HIGH_SEVERITY_CATEGORIES:
-                    send_sns_alert(category, delta, eval_run_tag)
+                    send_sns_alert(category, delta, threshold, eval_run_tag)
     else:
         print("No previous run found — skipping delta calculation.")
         regression_flags = {category: False for category in CATEGORIES}
@@ -306,4 +320,5 @@ def handler(event, context):
         "judge_failures": judge_failures,
         "avg_scores": avg_scores,
         "regression_flags": regression_flags,
+        "regression_thresholds": REGRESSION_THRESHOLDS,
     }
